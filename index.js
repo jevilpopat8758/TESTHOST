@@ -6,9 +6,9 @@ var router=require('./route');
                                                                                                                                              
 var app=express();
 app.use('/api',router);
-app.listen(3000,()=>{
+//app.listen(3000,()=>{
+  //  console.log("Server Started");
+//});
+app.listen(process.env.PORT,()=>{
     console.log("Server Started");
 });
-//app.listen(process.env.PORT,()=>{
-//    console.log("Server Started");
-//});
